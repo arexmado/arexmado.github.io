@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>홈 페이지</h1>
-    <a href="{{ url_for('download') }}">다운로드</a>
+    <a href="{{ url_for('download.htmi') }}">다운로드</a>
 </body>
 </html>
 
