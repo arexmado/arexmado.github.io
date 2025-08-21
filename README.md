@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>홈 페이지</h1>
-    <a href="{{ url_for('download.html') }}">다운로드</a>
+    <!-- 다운로드 클릭 시 로그인 페이지로 이동 -->
+    <a href="login.html">다운로드</a>
 </body>
 </html>
 
