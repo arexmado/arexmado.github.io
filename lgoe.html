@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>회원 정보 입력 폼</title>
+</head>
+<body>
+    <h2>회원 정보 입력</h2>
+    <form action="/submit" method="post">
+        <label for="lastName">성 (예: 박):</label><br />
+        <input type="text" id="lastName" name="lastName" maxlength="1" required /><br /><br />
+        
+        <label for="firstName">이름:</label><br />
+        <input type="text" id="firstName" name="firstName" required /><br /><br />
+        
+        <label for="email">이메일:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        
+        <label for="company">기업명:</label><br />
+        <input type="text" id="company" name="company" /><br /><br />
+        
+        <label for="phone">전화번호:</label><br />
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{9,11}" placeholder="숫자만 입력 (예: 01012345678)" /><br /><br />
+        
+        <label for="position">직책:</label><br />
+        <input type="text" id="position" name="position" /><br /><br />
+        
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>
