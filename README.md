@@ -17,5 +17,8 @@
 
     <!-- 다운로드 버튼 -->
     <a href="lgoe.html">다운로드</a>
+
+    <!-- 다운로드 버튼 -->
+    <a href="1GM.html">다운로드</a>
 </body>
 </html>
