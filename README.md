@@ -19,6 +19,6 @@
     <a href="lgoe.html">다운로드</a>
 
     <!-- 다운로드 버튼 -->
-    <a href="1GM.html">다운로드</a>
+    <a href="1GM.html">파일 업로드 & 다운로드</a>
 </body>
 </html>
