@@ -26,7 +26,7 @@
 </html>
 
   <!-- 업,다운로드 페이지로 이동하는 링크 -->
-  <a href="indexs.html">
+  <a href="downloads_updated.html">
     <button style="font-size: 18px; padding: 10px 20px;">업로드,다운로드 페이지로 이동</button>
   </a>
 
