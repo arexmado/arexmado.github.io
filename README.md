@@ -25,20 +25,16 @@
    <!-- 홈 -->
     <h2>홈 페이지</h2>
 
-    <!-- 다운로드 버튼 -->
-    <a href="lgoe.html">
-        <button class="btn">다운로드</button>
-    </a>
+<div>
+  <a href="lgoe.html"><button class="btn">다운로드</button></a>
+</div>
+<div>
+  <a href="templates/indexs.html"><button class="btn">업로드,다운로드 페이지로 이동</button></a>
+</div>
+<div>
+  <a href="downloads_updated.html"><button class="btn">다운로드 페이지로 이동</button></a>
+</div>
 
-    <!-- 업,다운로드 페이지로 이동하는 버튼 -->
-    <a href="templates/indexs.html">
-        <button class="btn">업로드,다운로드 페이지로 이동</button>
-    </a>
-
-    <!-- 다운로드 페이지로 이동하는 버튼 -->
-    <a href="downloads_updated.html">
-        <button class="btn">다운로드 페이지로 이동</button>
-    </a>
 
 </body>
 </html>
