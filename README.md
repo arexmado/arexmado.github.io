@@ -30,7 +30,7 @@
     <button style="font-size: 18px; padding: 10px 20px;">업로드,다운로드 페이지로 이동</button>
   </a>
 
-  <a href="templates/indexs.html">다운로드 페이지1</a>
+  <a href="downloads_updated.html">다운로드 페이지1</a>
 </body>
 </html>
 
