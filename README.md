@@ -19,8 +19,16 @@
     <a href="lgoe.html">다운로드</a>
 
   <!-- 업,다운로드 페이지로 이동하는 링크 -->
-  <a href="1GM.html">
+  <a href="indexs.html">
     <button style="font-size: 18px; padding: 10px 20px;">업로드,다운로드 페이지로 이동</button>
   </a>
 </body>
 </html>
+
+  <!-- 업,다운로드 페이지로 이동하는 링크 -->
+  <a href="indexs.html">
+    <button style="font-size: 18px; padding: 10px 20px;">업로드,다운로드 페이지로 이동</button>
+  </a>
+</body>
+</html>
+
