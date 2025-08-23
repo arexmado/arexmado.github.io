@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -32,6 +31,4 @@
 
   <a href="downloads_updated.html">다운로드 페이지1</a>
   
-    </body>
-</html>
 
