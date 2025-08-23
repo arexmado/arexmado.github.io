@@ -2,6 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <title>AREXMADO 다운로드</title>
+    <style>
+        /* 버튼 공통 스타일 */
+        .btn {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px 0;   /* 위아래 간격 */
+            display: block;   /* 세로 배치 */
+            width: 250px;     /* 버튼 넓이 고정 (선택) */
+        }
+    </style>
 </head>
 <body>
     
@@ -16,17 +26,19 @@
     <h2>홈 페이지</h2>
 
     <!-- 다운로드 버튼 -->
-    <a href="lgoe.html">다운로드</a>
+    <a href="lgoe.html">
+        <button class="btn">다운로드</button>
+    </a>
 
-  <!-- 업,다운로드 페이지로 이동하는 링크 -->
-  <a href="templates/indexs.html">
-    <button style="font-size: 18px; padding: 10px 20px;">업로드,다운로드 페이지로 이동</button>
-  </a>
+    <!-- 업,다운로드 페이지로 이동하는 버튼 -->
+    <a href="templates/indexs.html">
+        <button class="btn">업로드,다운로드 페이지로 이동</button>
+    </a>
+
+    <!-- 다운로드 페이지로 이동하는 버튼 -->
+    <a href="downloads_updated.html">
+        <button class="btn">다운로드 페이지로 이동</button>
+    </a>
+
 </body>
 </html>
-
-  <!-- 다운로드 페이지로 이동 -->
-  <a href="downloads_updated.html">
-    <button style="font-size: 18px; padding: 10px 20px;">다운로드 페이지로 이동</button>
-  </a>
-  
