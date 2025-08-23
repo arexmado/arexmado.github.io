@@ -19,7 +19,7 @@
     <a href="lgoe.html">다운로드</a>
 
   <!-- 업,다운로드 페이지로 이동하는 링크 -->
-  <a href="templates\indexs.html">
+  <a href="templates/indexs.html">
     <button style="font-size: 18px; padding: 10px 20px;">업로드,다운로드 페이지로 이동</button>
   </a>
 </body>
@@ -29,6 +29,8 @@
   <a href="indexs.html">
     <button style="font-size: 18px; padding: 10px 20px;">업로드,다운로드 페이지로 이동</button>
   </a>
+
+  <a href="templates/indexs.html">다운로드 페이지1</a>
 </body>
 </html>
 
