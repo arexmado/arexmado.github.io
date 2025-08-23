@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>다운로드 센터</title>
+  <style>
+    body { font-family: sans-serif; background: #121212; color: white; margin: 0; }
+    header, footer { background: #1f1f1f; padding: 20px; text-align: center; }
+    section { padding: 40px; }
+    .box {
+      background: #1e1e1e; padding: 20px; margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    a.download {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #2196f3;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📦 다운로드 센터</h1>
+  <p>안녕하세요, { '{ username }' }님 | <a href="/logout" style="color:#ccc;">로그아웃</a></p>
+</header>
+
+<section>
+  <div class="box">
+    <h2>Program v1.0</h2>
+    <p>최초 버전 - 기본 기능 포함</p>
+    <a class="download" href="/static/program_v1.0.exe" download>v1.0 다운로드</a>
+  </div>
+
+  <div class="box">
+    <h2>Program v1.1</h2>
+    <p>버그 수정 및 UI 개선</p>
+    <a class="download" href="/static/cord%20Setup.exe" download>v1.1 다운로드</a>
+  </div>
+
+  <div class="box">
+    <h2>Program v1.2</h2>
+    <p>자동 업데이트 기능 추가</p>
+    <a class="download" href="/static/program_v1.2.exe" download>v1.2 다운로드</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 내 프로그램 | <a href="/">← 메인으로</a></p>
+</footer>
+
+</body>
+</html>
