@@ -4,6 +4,9 @@
     <title>AREXMADO 다운로드</title>
 </head>
 <body>
+   ![Badge](https://img.shields.io/badge/배경-초록색-green?style=for-the-badge)
+
+    
     <!-- 제목 -->
     <h1>AREXMADO 다운로드</h1>
 
@@ -11,7 +14,7 @@
     <p>안녕하세요, 이 코드는 arexmado 코드 다운로드 페이지의 설명 입니다.
      그리고 다운 가능한 사이트입니다</p>
 
-    <!-- 홈 -->
+   <!-- 홈 -->
     <h2>홈 페이지</h2>
 
     <!-- 다운로드 버튼 -->
