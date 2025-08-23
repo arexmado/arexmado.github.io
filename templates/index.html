@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>📁 다운로드 센터</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>📂 파일 다운로드 목록</h1>
+    <ul>
+        {% for file in files %}
+            <li>
+                {{ file }}
+                <a href="{{ url_for('download', filename=file) }}">[ 다운로드 ]</a>
+            </li>
+        {% else %}
+            <p>❌ 다운로드 가능한 파일이 없습니다.</p>
+        {% endfor %}
+    </ul>
+    <hr>
+    <a href="/upload">🔼 파일 업로드</a>
+</body>
+</html>
