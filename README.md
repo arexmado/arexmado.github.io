@@ -1,79 +1,31 @@
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>AREXMADO 다운로드</title>
-    <style>
-        /* 버튼 공통 스타일 */
-        .btn {
-            font-size: 18px;
-            padding: 10px 20px;
-            margin: 10px 0;   /* 위아래 간격 */
-            display: block;   /* 세로 배치 */
-            width: 250px;     /* 버튼 넓이 고정 (선택) */
-        }
-    </style>
-</head>
-<body>
-    
-    <!-- 제목 -->
-    <h1>AREXMADO 다운로드</h1>
+# AREXMADO 커뮤니티 🌐
 
-    <!-- 설명 -->
-    <p>안녕하세요, 이 코드는 arexmado 코드 다운로드 페이지의 설명 입니다.
-     그리고 다운 가능한 사이트입니다</p>
+[![GitHub Pages](https://img.shields.io/badge/View-Site-blue?style=flat-square&logo=github)](https://arexmado.github.io/arexmado-community)
 
-   <!-- 홈 -->
-    <h2>홈 페이지</h2>
+AREXMADO 공식 커뮤니티 허브입니다.  
+YouTube, 네이버 팬카페, Discord, GitHub 등 다양한 플랫폼을 한곳에서 연결하고 소식을 공유합니다.  
 
-<div>
-  <a href="lgoe.html"><button class="btn">다운로드</button></a>
-</div>
-<div>
-  <a href="templates/indexs.html"><button class="btn">업로드,다운로드 페이지로 이동</button></a>
-</div>
-<div>
-  <a href="downloads_updated.html"><button class="btn">다운로드 페이지로 이동</button></a>
-</div>
+---
 
-<section id="latest-videos" class="mx-auto max-w-6xl px-4 mt-16">
-  <h2 class="text-2xl font-bold mb-4">최신 영상</h2>
-  <div id="video-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- 최신 영상이 여기에 동적으로 삽입됩니다 -->
-  </div>
-</section>
+## ✨ 기능
+- **링크 모음**: 유튜브, 팬카페, 디스코드, 트위터(X), GitHub
+- **공지/소식**: GitHub Pages 기반 간단한 공지 기능
+- **다운로드**: GitHub Releases와 연동 가능
+- **다크모드 지원**
+- **반응형 레이아웃** (PC/모바일 대응)
 
-<script>
-  const apiKey = 'YOUR_API_KEY'; // 발급받은 API 키를 여기에 입력하세요
-  const channelId = 'UCXXXXXXX'; // AREXMADO 채널의 ID를 여기에 입력하세요
+---
 
-  async function fetchLatestVideos() {
-    const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&order=date&part=snippet&type=video&maxResults=3`);
-    const data = await response.json();
+## 🔗 커뮤니티 바로가기
+- [YouTube](https://www.youtube.com/@arexmado)
+- [네이버 팬카페](https://cafe.naver.com/arex)
+- [Discord](#) _(초대 링크 추가 예정)_
+- [X (Twitter)](#) _(링크 추가 예정)_
+- [GitHub](https://github.com/arexmado)
 
-    const videoList = document.getElementById('video-list');
-    data.items.forEach(item => {
-      const videoId = item.id.videoId;
-      const title = item.snippet.title;
-      const thumbnail = item.snippet.thumbnails.high.url;
-      const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+---
 
-      const videoCard = document.createElement('div');
-      videoCard.classList.add('rounded-2xl', 'bg-slate-800', 'overflow-hidden', 'shadow-lg');
-      videoCard.innerHTML = `
-        <a href="${videoUrl}" target="_blank">
-          <img class="w-full h-48 object-cover" src="${thumbnail}" alt="${title}">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-white">${title}</h3>
-          </div>
-        </a>
-      `;
-      videoList.appendChild(videoCard);
-    });
-  }
-
-  fetchLatestVideos();
-</script>
-
-
-</body>
-</html>
+## 🚀 설치 & 배포
+1. 저장소 클론:
+   ```bash
+   git clone https://github.com/arexmado/arexmado-community.git
