@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AREXMADO 커뮤니티</title>
+  <meta name="description" content="AREXMADO 공식 커뮤니티 허브 – 유튜브, 팬카페, 디스코드, 소식 모음" />
+  <meta property="og:title" content="AREXMADO 커뮤니티" />
+  <meta property="og:description" content="AREXMADO 공식 커뮤니티 허브 – 유튜브, 팬카페, 디스코드, 소식 모음" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" href="/assets/favicon.png" />
+  <!-- Tailwind CDN (정적 페이지에서 간편 사용) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // 다크모드 유지
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <style>
+    /* 약간의 커스텀 스타일 */
+    .glass { backdrop-filter: blur(12px); background: rgba(17,24,39,0.5); }
+    .card { border-radius: 1.25rem; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <!-- 헤더 -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/40 dark:border-slate-800/60 bg-white/80 dark:bg-slate-950/70 glass">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="/assets/favicon.png" alt="AREXMADO" class="w-8 h-8 rounded-xl" onerror="this.style.display='none'" />
+        <span class="font-bold text-lg">AREXMADO 커뮤니티</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#home" class="hover:opacity-80">홈</a>
+        <a href="#links" class="hover:opacity-80">커뮤니티 링크</a>
+        <a href="#news" class="hover:opacity-80">소식</a>
+        <a href="#contact" class="hover:opacity-80">문의</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeBtn" class="px-3 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm">🌙/☀️</button>
+        <a href="https://github.com/arexmado/arexmado-community" class="px-3 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 히어로 -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-10 dark:opacity-20" aria-hidden="true">
+      <div class="h-[420px] bg-gradient-to-br from-indigo-500 via-sky-500 to-emerald-500"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">AREXMADO 커뮤니티 허브</h1>
+      <p class="mt-4 text-lg md:text-xl text-slate-600 dark:text-slate-300">유튜브, 팬카페, 디스코드 등 모든 소셜을 한 곳에서! 공지와 다운로드, 링크 모음까지.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#links" class="px-5 py-3 rounded-2xl bg-indigo-600 text-white hover:opacity-90">링크 바로가기</a>
+        <a href="#news" class="px-5 py-3 rounded-2xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">최신 소식</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 링크 카드 -->
+  <section id="links" class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">커뮤니티 링크</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- 유튜브 -->
+      <a class="card p-6 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition" href="https://www.youtube.com/@arexmado" target="_blank" rel="noopener">
+        <div class="text-xl font-semibold">YouTube</div>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">@arexmado 채널로 이동</p>
+      </a>
+      <!-- 네이버 카페 -->
+      <a class="card p-6 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition" href="https://cafe.naver.com/arex" target="_blank" rel="noopener">
+        <div class="text-xl font-semibold">네이버 팬카페</div>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">팬들과 소통해요</p>
+      </a>
+      <!-- 디스코드 -->
+      <a class="card p-6 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition" href="#" onclick="alert('디스코드 초대 링크를 설정하세요!'); return false;">
+        <div class="text-xl font-semibold">Discord</div>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">실시간 커뮤니티 채팅</p>
+      </a>
+      <!-- X(Twitter) -->
+      <a class="card p-6 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition" href="#" onclick="alert('X(트위터) 링크를 설정하세요!'); return false;">
+        <div class="text-xl font-semibold">X (Twitter)</div>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">업데이트/짧은 소식</p>
+      </a>
+      <!-- GitHub -->
+      <a class="card p-6 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition" href="https://github.com/arexmado" target="_blank" rel="noopener">
+        <div class="text-xl font-semibold">GitHub</div>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">코드와 프로젝트</p>
+      </a>
+      <!-- 이메일/문의 -->
+      <a class="card p-6 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition" href="#contact">
+        <div class="text-xl font-semibold">문의하기</div>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">제안/협업/문의</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- 소식 -->
+  <section id="news" class="max-w-6xl mx-auto px-4 py-14">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl md:text-3xl font-bold">최신 소식</h2>
+      <button id="addPostBtn" class="px-3 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm">임시 공지 추가</button>
+    </div>
+    <ul id="postList" class="space-y-4">
+      <li class="card p-5 border border-slate-200 dark:border-slate-800">
+        <div class="text-sm text-slate-500 dark:text-slate-400">초기 게시</div>
+        <div class="font-semibold mt-1">AREXMADO 커뮤니티 오픈 🎉</div>
+        <p class="mt-1 text-slate-700 dark:text-slate-300">GitHub Pages로 간편하게 운영되는 공식 커뮤니티 허브입니다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 다운로드(선택) -->
+  <section class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">다운로드</h2>
+    <div class="card p-6 border border-slate-200 dark:border-slate-800">
+      <p class="text-slate-600 dark:text-slate-300">GitHub Releases 또는 저장소의 /downloads 폴더에 파일을 올리고 아래 링크를 수정해 주세요.</p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href="#" class="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:opacity-90" onclick="alert('다운로드 링크를 설정하세요!'); return false;">앱/도구 다운로드</a>
+        <a href="https://github.com/arexmado" target="_blank" rel="noopener" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">GitHub Releases</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 문의 -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">문의/연락</h2>
+    <form class="card p-6 border border-slate-200 dark:border-slate-800 space-y-4" onsubmit="alert('정적 페이지이므로 폼 처리는 이메일 링크/폼 서비스로 연결하세요.'); return false;">
+      <div>
+        <label class="block text-sm mb-1">이름</label>
+        <input type="text" class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" required />
+      </div>
+      <div>
+        <label class="block text-sm mb-1">이메일</label>
+        <input type="email" class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" required />
+      </div>
+      <div>
+        <label class="block text-sm mb-1">메시지</label>
+        <textarea class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2" rows="4" required></textarea>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:opacity-90">보내기</button>
+        <a href="mailto:admin@example.com" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">이메일로 보내기</a>
+      </div>
+    </form>
+  </section>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-10 text-center text-sm text-slate-500">
+    © <span id="y"></span> AREXMADO. 일부 권리 보유.
+    <div class="mt-2"><a href="/privacy.html" class="hover:underline">개인정보처리방침</a> · <a href="/terms.html" class="hover:underline">이용약관</a></div>
+  </footer>
+
+  <script>
+    // 연도
+    document.getElementById('y').textContent = new Date().getFullYear()
+
+    // 테마 토글
+    document.getElementById('themeBtn').addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark')
+      localStorage.setItem('theme', isDark ? 'dark' : 'light')
+    })
+
+    // 임시 공지 추가 (정적 데모)
+    document.getElementById('addPostBtn').addEventListener('click', () => {
+      const ul = document.getElementById('postList')
+      const li = document.createElement('li')
+      li.className = 'card p-5 border border-slate-200 dark:border-slate-800'
+      const now = new Date()
+      li.innerHTML = `<div class="text-sm text-slate-500 dark:text-slate-400">${now.toLocaleDateString()}</div>
+        <div class="font-semibold mt-1">새 공지 샘플</div>
+        <p class="mt-1 text-slate-700 dark:text-slate-300">GitHub Pages에 올린 뒤, JSON/Markdown로 자동 로딩 기능을 추가해보세요.</p>`
+      ul.prepend(li)
+    })
+  </script>
+</body>
+</html>
